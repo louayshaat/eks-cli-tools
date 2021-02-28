@@ -7,7 +7,7 @@ sudo pip install awscli --upgrade
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 source  ~/.bash_profile
-
+export PATH=/home/ec2-user/.linuxbrew/bin
 brew tap weaveworks/tap
 brew install kubernetes-cli kubernetes-helm weaveworks/tap/eksctl
 brew install helm
