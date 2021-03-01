@@ -6,7 +6,7 @@ pip install awscli --upgrade
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-eval $(/home/ec2-user/.linuxbrew/bin/brew shellenv)
+echo 'eval $(/home/ec2-user/.linuxbrew/bin/brew shellenv)' >> /home/ec2-user/.bash_profile
 source  ~/.bash_profile
 
 brew tap weaveworks/tap
