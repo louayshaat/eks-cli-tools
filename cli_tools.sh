@@ -1,13 +1,12 @@
 cd ~
 sudo yum groupinstall "Development Tools" -y
 sudo yum install jq -y
-sudo pip install --upgrade pip
-sudo pip install awscli --upgrade
+pip install --upgrade pip
+pip install awscliv2
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+eval $(/home/ec2-user/.linuxbrew/bin/brew shellenv)
 
-source  ~/.bash_profile
-export PATH=/home/ec2-user/.linuxbrew/bin
 brew tap weaveworks/tap
 brew install kubernetes-cli kubernetes-helm weaveworks/tap/eksctl
 brew install helm
