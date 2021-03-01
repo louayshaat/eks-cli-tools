@@ -12,8 +12,6 @@ source  ~/.bash_profile
 brew tap weaveworks/tap
 brew install kubernetes-cli kubernetes-helm weaveworks/tap/eksctl
 brew install eksctl
-brew install gettext
-
 
 source  ~/.bash_profile
 aws eks update-kubeconfig --name 'EKS-Lab'
